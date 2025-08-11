@@ -1,8 +1,9 @@
 function getFormvalue() {
-    //Write your code here
-	const fname = document.getElementsByName("fname").value;
-	const lname = document.getElementsByName("lname").value;
 
-		alert(fname+ " "+lname);
+  const firstName = document.querySelector('input[name="fname"]').value.trim();
+  const lastName = document.querySelector('input[name="lname"]').value.trim();
+
+  alert(firstName + " " + lastName);
+
+  return false; // stop form submission
 }
-
